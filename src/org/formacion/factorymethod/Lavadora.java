@@ -2,16 +2,16 @@ package org.formacion.factorymethod;
 
 public abstract class Lavadora {
 
-	protected boolean tieneTambor;
-	protected boolean tieneMandos;
-	protected String  tipoCarga;
+	protected boolean tieneTambor = false;
+	protected boolean tieneMandos = false;
+	protected String  tipoCarga = null;
 	
 	public void ponerTambor() {
-		tieneTambor = true;
+		this.tieneTambor = true;
 	}
 	
 	public void ponerMandos() {
-		tieneMandos = true;
+		this.tieneMandos = true;
 	}
 
 }
